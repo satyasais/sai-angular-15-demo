@@ -24,6 +24,17 @@
         />
       </div>
 
+      <div class="form-group">
+        <label for="officalRefLinks">OfficalRefLinks</label>
+        <input
+          class="form-control"
+          id="officalRefLinks"
+          required
+          [(ngModel)]="tutorial.officalRefLinks"
+          name="officalRefLinks"
+        />
+      </div>
+
       <button (click)="saveTutorial()" class="btn btn-success">Submit</button>
     </div>
 

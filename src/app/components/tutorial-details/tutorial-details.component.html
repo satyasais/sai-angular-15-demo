@@ -9,6 +9,10 @@
       {{ currentTutorial.description }}
     </div>
     <div>
+      <label><strong>OfficalRefLinks:</strong></label>
+      {{ currentTutorial.officalRefLinks }}
+    </div>
+    <div>
       <label><strong>Status:</strong></label>
       {{ currentTutorial.published ? "Published" : "Pending" }}
     </div>
@@ -49,6 +53,17 @@
           id="description"
           [(ngModel)]="currentTutorial.description"
           name="description"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="officalRefLinks">OfficalRefLinks</label>
+        <input
+          type="text"
+          class="form-control"
+          id="officalRefLinks"
+          [(ngModel)]="currentTutorial.officalRefLinks"
+          name="officalRefLinks"
         />
       </div>
 

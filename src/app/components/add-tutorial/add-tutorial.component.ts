@@ -12,6 +12,7 @@ export class AddTutorialComponent {
   tutorial: Tutorial = {
     title: '',
     description: '',
+    officalRefLinks: '',
     published: false
   };
   submitted = false;
@@ -21,7 +22,8 @@ export class AddTutorialComponent {
   saveTutorial(): void {
     const data = {
       title: this.tutorial.title,
-      description: this.tutorial.description
+      description: this.tutorial.description,
+      officalRefLinks: this.tutorial.officalRefLinks
     };
 
     this.tutorialService.create(data)
@@ -39,6 +41,7 @@ export class AddTutorialComponent {
     this.tutorial = {
       title: '',
       description: '',
+      officalRefLinks: '',
       published: false
     };
   }
